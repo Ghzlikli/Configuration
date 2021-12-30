@@ -37,7 +37,7 @@ int main()
         cout << n_iteration << "\n";
 
         cout << "\n\nReading a missing numeric value, returning the default value:\n " << my_config.get_value("beta", 0.89);
-        cout << "\n\nReading a missing stirng value: " << my_config.get_value_string("datafile2");
+        cout << "\n\nReading a missing string value: " << my_config.get_value_string("datafile2");
 
         cout << "\n\nThis value will not be read: " << my_config.get_value("theta", 0.8);
     }
