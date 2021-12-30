@@ -12,7 +12,17 @@ int main()
      * A sample run for 'MyConfiguration' header.
      * Reading a configuration file.
      */
-    config my_config("config.cfg");
+    
+    try
+    {
+        config my_config("config.cfg");
+    }
+    catch (const exception &e)
+    {
+        cout << "Error: " << e.what() << '\n';
+        return -1;
+    }
+    
     my_config.print_content();
 
     uint64_t n_iteration;
