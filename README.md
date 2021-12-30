@@ -24,7 +24,7 @@ The parameters are defined in `key = value; comments` format. When reading numer
 
 ## Features
 
-- **Lightweight:** The code consists of only 180 lines (excluding comments and blank lines).
+- **Lightweight:** The code consists of only around 180 lines (excluding comments and blank lines).
 - **Simple to use:** The user needs to include only a single header file  `#include "MyConfiguration.hpp"`.
 - **Documented using Doxygen:** The comments are generated using Doxygen, making the code easy to understand and modify.
 - **Printing available:** The `print_content()` member function prints the keys and values of the config file.
