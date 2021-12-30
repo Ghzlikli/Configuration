@@ -13,6 +13,8 @@ int main()
      * Reading a configuration file.
      */
     config my_config("config.cfg");
+    my_config.print_content();
+
     uint64_t n_iteration;
     try
     {
