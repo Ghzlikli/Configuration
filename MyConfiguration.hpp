@@ -1,12 +1,12 @@
 /**
  * @file MyConfiguration.hpp
  * @author Ghazal Khalili (khalili.ghazal.97@gmail.com)
- * @brief 
+ * @brief
  * @version 0.1
  * @date 2021-12-29
- * 
+ *
  * @copyright Copyright (c) 2021
- * 
+ *
  */
 #include <iostream>
 #include <fstream>
@@ -39,6 +39,15 @@ public:
     {
     public:
         file_notfound() : invalid_argument("Cannot open a file with the given name!\n"){};
+    };
+
+    /**
+     * @brief Exception to be thrown if reading the file encounters an error.
+     */
+    class file_failed : public invalid_argument
+    {
+    public:
+        file_failed() : invalid_argument("Encountered an error in input!\n"){};
     };
 
     /**
@@ -189,9 +198,8 @@ config::config(const string &_file_name) : confile(_file_name)
         cout << "\nConfiguration file is received.\n";
     else if (input.fail())
     {
-        cout << "Encountered an error in input!\n";
         input.close();
-        throw typename config::file_notfound();
+        throw typename config::file_failed();
     }
     input.close();
 }
