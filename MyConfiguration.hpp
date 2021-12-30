@@ -51,7 +51,7 @@ public:
     };
 
     /**
-     * @brief Exception to be thrownif the line is not in the valid format.
+     * @brief Exception to be thrown if the line is not in the valid format.
      */
     class incompatible_format : public invalid_argument
     {
@@ -60,7 +60,7 @@ public:
     };
 
     /**
-     * @brief Exception to be thrownif any line misses the value.
+     * @brief Exception to be thrown if any line misses the value.
      */
     class value_notfound : public invalid_argument
     {
@@ -69,7 +69,7 @@ public:
     };
 
     /**
-     * @brief Exception to be thrownif a number value is not valid.
+     * @brief Exception to be thrown if a number value is not valid.
      */
     class num_invalid : public invalid_argument
     {
