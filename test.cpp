@@ -13,21 +13,15 @@ int main()
      * Reading a configuration file.
      */
     
-    try
-    {
-        config my_config("config.cfg");
-    }
-    catch (const exception &e)
-    {
-        cout << "Error: " << e.what() << '\n';
-        return -1;
-    }
-    
-    my_config.print_content();
-
     uint64_t n_iteration;
     try
     {
+        config my_config("config.cfg");
+
+        
+        my_config.print_content();
+
+
         cout << "\n\nReading a string value: " << my_config.get_value_string("datafile");
         cout << "\n\nReading a numeric value: " << my_config.get_value("alpha", 0.9);
 
