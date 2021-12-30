@@ -2,8 +2,8 @@
  * @file MyConfiguration.hpp
  * @author Ghazal Khalili (khalili.ghazal.97@gmail.com)
  * @brief
- * @version 0.1
- * @date 2021-12-29
+ * @version 1.1
+ * @date 2021-12-30
  *
  * @copyright Copyright (c) 2021
  *
