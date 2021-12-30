@@ -69,7 +69,7 @@ public:
     };
 
     /**
-     * @brief Exception to be thrown if any line misses the value.
+     * @brief Exception to be thrown if a line misses the value.
      */
     class value_notfound : public invalid_argument
     {
