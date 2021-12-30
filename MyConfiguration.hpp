@@ -51,7 +51,7 @@ public:
     };
 
     /**
-     * @brief Exception to be thrown if any line misses the key.
+     * @brief Exception to be thrown if the key is not found.
      */
     class key_notfound : public invalid_argument
     {
