@@ -131,6 +131,6 @@ Any feedback or request is highly appreciated through [open a new issue](https:/
 
 Copyright (c) 2021 [Ghazal Khalili](mailto:khalili.ghazal.97@gmail.com).
 
-If you use this class in your code, please acknowledge the author and provide a link to the [GitHub repository](https://github.com/Ghzlikli/CSE701_Ghazal).
+If you use this class in your code, please acknowledge the author and provide a link to the [GitHub repository](https://github.com/Ghzlikli/Configuration).
 
 **Thank you!**
